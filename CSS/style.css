@@ -1,0 +1,312 @@
+:root {
+	--header_color : cadetblue;
+}
+
+html {
+	font-family : 'Noto Sans KR', sans-serif;
+	font-size   : 14px;
+}
+
+/*
+@media (max-width : 700px ) {
+	html {
+		font-family : 'Noto Sans KR', sans-serif;
+		font-size   : 10px;
+	}
+
+	.name-job-list {
+		margin-top : -22.4px;
+	}
+
+	@keyframes showJobList-phone {
+		0% {
+			margin-top : 0;
+		}
+		25% {
+			margin-top : -32px;
+		}
+		50% {
+			margin-top : -64px;
+		}
+		75% {
+			margin-top : -96px;
+		}
+		100% {
+			margin-top : 0;
+		}
+	}
+	.name-job-list {
+		animation-name            : showJobList-phone;
+		animation-delay           : 2s;
+		animation-duration        : 10s;
+		animation-iteration-count : infinite;
+	}
+
+	.main-content {
+		display        : flex;
+		flex-direction : column;
+	}
+
+	.profile-section {
+		line-height : 1.6rem;
+	}
+}
+*/
+
+@media (min-width : 700px) {
+	@keyframes showJobList {
+		0% {
+			margin-top : 0;
+		}
+		25% {
+			margin-top : -44.8px;
+		}
+		50% {
+			margin-top : -89.6px;
+		}
+		75% {
+			margin-top : -134.4px;
+		}
+		100% {
+			margin-top : 0;
+		}
+	}
+	.profile-section {
+		line-height : 1.6rem;
+	}
+
+	.name-job-list {
+		animation-name            : showJobList;
+		animation-delay           : 2s;
+		animation-duration        : 10s;
+		animation-iteration-count : infinite;
+	}
+
+    .main-content {
+		display        : flex;
+		flex-direction : row;
+	}
+
+	.main-content .photo-section {
+		width       : 45%;
+		height      : 100vh;
+		display     : flex;
+		align-items : center;
+	}
+
+	.photo-section .photo {
+		height  : 100%;
+		width   : 100%;
+		padding : 0;
+		margin  : 0;
+	}
+
+	.photo-section {
+		max-width : 460px;
+		position  : fixed;
+	}
+
+	.main-content .profile {
+		width       : 55%;
+		max-width   : 850px;
+		margin-left : 470px;
+		padding     : 10px 10px;
+		margin-top  : 40px;
+	}
+}
+
+
+/* 
+@media (min-width : 950px) {
+	.main-content {
+		display        : flex;
+		flex-direction : row;
+	}
+
+	.main-content .photo-section {
+		width       : 45%;
+		height      : 100vh;
+		display     : flex;
+		align-items : center;
+	}
+
+	.photo-section .photo {
+		height  : 100%;
+		width   : 100%;
+		padding : 0;
+		margin  : 0;
+	}
+
+	.photo-section {
+		max-width : 460px;
+		position  : fixed;
+	}
+
+	.main-content .profile {
+		width       : 55%;
+		max-width   : 850px;
+		margin-left : 470px;
+		padding     : 10px 10px;
+		margin-top  : 40px;
+	}
+
+}
+*/
+
+body {
+	background-color : #141414;
+	color            : #e0e2dd;
+}
+
+.main-content {
+	height : 100vh;
+	color  : silver;
+}
+
+.nav {
+	font-family      : 'Potta One', cursive;
+	display          : flex;
+	justify-content  : left;
+	align-items      : center;
+	position         : fixed;
+	height           : 40px;
+	width            : 100%;
+	background-color : #141414;
+	font-size        : 1.2rem;
+	color            : #e0e2dd;
+	z-index          : 10;
+}
+
+.nav .link {
+	cursor: pointer;
+}
+.nav .link:hover {
+	color: cadetblue;
+}
+
+.nav .link {
+	padding-right : 4rem;
+	padding-left  : 1.5rem;
+}
+
+.photo {
+	position            : relative;
+	background-image    : url("https://chanho-yoon.github.io/self-introduction-web/img/profile1.JPG");
+	background-size     : cover;
+	background-position : center;
+	padding-top         : 56.2%;
+	top                 : 40px;
+	margin-bottom       : 42px;
+}
+
+.photo_1 {
+	position            : relative;
+	background-image    : url("https://chanho-yoon.github.io/self-introduction-web/img/profile1.JPG");
+	background-size     : cover;
+	background-position : center;
+	padding-top         : 56.2%;
+	top                 : 40px;
+	margin-bottom       : 42px;
+}
+
+.profile {
+	padding : 2% 5%;
+}
+
+.profile-header, .profile-section {
+	padding-bottom : 7%;
+}
+
+.name {
+	font-family : 'Nanum Pen Script', cursive;
+	font-size   : 3.2rem;
+	display     : flex;
+}
+
+.name strong {
+	float         : left;
+	font-size     : 3.2rem;
+	padding-right : 1rem;
+}
+
+.name-job {
+	height   : 3.2rem;
+	overflow : hidden;
+	color    : white;
+}
+
+.my-name {
+	font-family : 'Nanum Pen Script', cursive;
+	font-size   : 5rem;
+	color       : var(--header_color);
+}
+
+.section-header {
+	font-size   : 1.5rem;
+	font-weight : bold;
+	color       : var(--header_color);
+	margin-top  : 1rem;
+}
+
+
+.listEmoticon {
+	margin-right : 5px;
+}
+
+.listFlex {
+	display : flex;
+}
+
+.section-content .listFlex:first-child {
+	margin-top : 1rem;
+}
+
+.listFlex-content {
+	margin-left : 15px;
+	display     : flex;
+}
+
+.listText-header {
+	font-size   : 1.2rem;
+	font-weight : bold;
+}
+
+.section-content ul li {
+	margin-bottom : 1rem;
+}
+
+/* footer */
+
+.footer {
+	width: 100%;
+	margin-top: 3.6rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-top: var(--header_color);
+	border-top-style: solid;
+	border-top-width: 1px;
+	padding: 1rem 0
+}
+
+.footer-header {
+	font-size: 2.5rem;
+	color: var(--header_color);
+	font-weight: bold;
+	margin-top: 2.5rem;
+	display: flex;
+	justify-content: center;
+}
+
+
+.footer-icon {
+	font-size: 1.5rem;
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+}
+
+.footer-icon a {
+	margin: 0 2rem;
+}
