@@ -1,3 +1,9 @@
+/* 
+    Reference
+    http://meyerweb.com/eric/tools/css/reset/
+    License: none (public domain)
+*/
+
 :root {
 	--header_color : cadetblue;
 }
@@ -7,7 +13,7 @@ html {
 	font-size   : 14px;
 }
 
-/*
+/* mobile */
 @media (max-width : 700px ) {
 	html {
 		font-family : 'Noto Sans KR', sans-serif;
@@ -51,7 +57,7 @@ html {
 		line-height : 1.6rem;
 	}
 }
-*/
+
 
 @media (min-width : 700px) {
 	@keyframes showJobList {
@@ -115,44 +121,6 @@ html {
 	}
 }
 
-
-/* 
-@media (min-width : 950px) {
-	.main-content {
-		display        : flex;
-		flex-direction : row;
-	}
-
-	.main-content .photo-section {
-		width       : 45%;
-		height      : 100vh;
-		display     : flex;
-		align-items : center;
-	}
-
-	.photo-section .photo {
-		height  : 100%;
-		width   : 100%;
-		padding : 0;
-		margin  : 0;
-	}
-
-	.photo-section {
-		max-width : 460px;
-		position  : fixed;
-	}
-
-	.main-content .profile {
-		width       : 55%;
-		max-width   : 850px;
-		margin-left : 470px;
-		padding     : 10px 10px;
-		margin-top  : 40px;
-	}
-
-}
-*/
-
 body {
 	background-color : #141414;
 	color            : #e0e2dd;
@@ -191,7 +159,7 @@ body {
 
 .photo {
 	position            : relative;
-	background-image    : url("https://chanho-yoon.github.io/self-introduction-web/img/profile1.JPG");
+	background-image    : url("https://github.com/JeongJunSeo99/self-introduction/blob/master/photo/code.png?raw=true");
 	background-size     : cover;
 	background-position : center;
 	padding-top         : 56.2%;
@@ -201,7 +169,7 @@ body {
 
 .photo_1 {
 	position            : relative;
-	background-image    : url("https://chanho-yoon.github.io/self-introduction-web/img/profile1.JPG");
+	background-image    : url("https://github.com/JeongJunSeo99/self-introduction/blob/master/photo/porject.jpg?raw=true");
 	background-size     : cover;
 	background-position : center;
 	padding-top         : 56.2%;
